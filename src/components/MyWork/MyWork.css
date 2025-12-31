@@ -1,0 +1,83 @@
+.mywork {
+  width: 100%;
+  padding: 100px 10%;
+  color: white;
+}
+
+/* TITLE */
+.mywork-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.mywork-title h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/* GRID */
+.mywork-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.mywork-card {
+  position: relative;
+  padding: 44px 36px;
+  border-radius: 22px;
+  background: #0f0f0f;
+  border: 1px solid #222;
+  transition: 0.4s ease;
+}
+
+.mywork-card:hover {
+  transform: translateY(-12px);
+  border-color: #9333ea;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+}
+
+/* IMAGE TOP RIGHT */
+.mywork-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  filter: grayscale(100%);
+}
+
+.mywork-card:hover .mywork-logo {
+  filter: grayscale(0%);
+}
+
+/* CONTENT */
+.mywork-content h3 {
+  font-size: 21px;
+  margin-bottom: 14px;
+  max-width: 75%;
+}
+
+.mywork-content p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .mywork-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .mywork-container {
+    grid-template-columns: 1fr;
+  }
+}

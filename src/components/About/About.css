@@ -1,0 +1,148 @@
+.about {
+  width: 100%;
+  padding: 90px 10%;
+  color: white;
+}
+
+/* TITLE */
+.about-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about-title h1 {
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.about-line {
+  display: block;
+  width: 120px;
+  height: 5px;
+  margin: 14px auto 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9333ea, #f97316);
+}
+
+/* MAIN LAYOUT */
+.about-content {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.about-left img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 4px solid #9333ea;
+}
+
+/* RIGHT CONTENT */
+.about-right {
+  flex: 1;
+}
+
+.about-right p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cfcfcf;
+  margin-bottom: 18px;
+}
+
+/* SKILLS */
+.about-skills {
+  margin-top: 30px;
+}
+
+.about-skill {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 18px;
+}
+
+.about-skill p {
+  min-width: 150px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/* SKILL LINE */
+.skill-bar {
+  flex: 1;
+  height: 6px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* GRADIENT LINE */
+.skill-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9333ea, #f97316);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .about-skill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-skill p {
+    min-width: unset;
+  }
+}
+/* EXPERIENCE SECTION */
+.experience {
+  margin-top: 90px;
+}
+
+.experience h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #9333ea, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-item {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 25px 30px;
+  border-left: 4px solid #9333ea;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.experience-item h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.experience-item span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.experience-item p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cfcfcf;
+}
